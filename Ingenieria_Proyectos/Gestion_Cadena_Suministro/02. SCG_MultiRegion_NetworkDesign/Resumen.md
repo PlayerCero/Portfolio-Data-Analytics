@@ -13,7 +13,7 @@ Configuración estratégica de una red de suministro distribuida en 5 regiones (
 * **Agilidad sobre Volumen (Lean Logistics)**: Para regiones con demanda volátil o distantes (Tyran y Fardo), se evitó el gasto fijo de construcción. En su lugar, se implementó una política de **reposición bajo demanda (Pull)** mediante envío por Correo, eliminando el efectivo inmovilizado en almacenes regionales ineficientes.
 
 ## 📈 Impacto y Resultados
-* **Optimización del Beneficio Neto**: La estrategia del grupo **"Triqueros"** priorizó la rentabilidad total sobre el nivel de servicio absoluto, logrando el mayor balance de efectivo posible mediante la reducción de costos fijos innecesarios.
+* **Optimización del Beneficio Neto**: La estrategia del grupo  priorizó la rentabilidad total sobre el nivel de servicio absoluto, logrando el mayor balance de efectivo posible mediante la reducción de costos fijos innecesarios.
 * **Mitigación de Riesgo Financiero**: Estructura de costos flexible que permitió a la empresa adaptarse a cambios bruscos en la demanda regional sin comprometer la liquidez.
 
 ---
