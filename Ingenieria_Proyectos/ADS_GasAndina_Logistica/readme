@@ -1,1 +1,43 @@
-GasAndinaApp: Sistema de Gestión de Distribución Logística 🚛🔥Este proyecto presenta el análisis, diseño y prototipado de una solución móvil integral para Gas Andina S.A., una empresa peruana líder en la distribución de Gas Licuado de Petróleo (GLP). El objetivo principal es modernizar el proceso logístico, pasando de una gestión manual a un ecosistema digital eficiente, seguro y escalable.📋 Resumen del ProyectoEl sistema aborda la problemática de la alta competencia y la necesidad de optimización operativa en el sector energético. A través de una arquitectura modular, la aplicación conecta a clientes, despachadores y conductores en tiempo real para optimizar la cadena de suministro.🚀 Características PrincipalesAutomatización de Pedidos: Interfaz intuitiva para que los clientes soliciten gas con validación de inventario en tiempo real.Optimización de Rutas: Algoritmos (como Dijkstra) para calcular las rutas más eficientes, reduciendo costos y tiempos de entrega.Rastreo en Tiempo Real: Seguimiento GPS del vehículo tanto para el cliente como para el centro de control.Confirmación Digital: Implementación de firma electrónica en dispositivos móviles para validación de entrega inmediata.Analítica Predictiva: Pizarras interactivas para supervisores basadas en datos históricos e incidencias.🏗️ Arquitectura y ModeladoSe utilizó el lenguaje estandarizado UML y la herramienta Modelio para documentar la arquitectura de la solución:Casos de Uso: Definición de interacciones para los tres actores principales (Cliente, Despachador, Conductor) .Diagramas de Comportamiento: Diagramas de actividades y secuencias para flujos críticos como la cancelación de pedidos o reporte de incidentes .Estructura de Datos: Modelo de base de datos relacional y diagrama de clases con principios de herencia y abstracción.Infraestructura: Diagramas de despliegue y contenedores que muestran la integración con sistemas ERP y SCADA.🛠️ Tecnologías SugeridasModelado: Modelio (UML 2.0).Metodología de Arquitectura: Basado en marcos de trabajo como TOGAF.Integraciones: API de Google Maps, Blockchain (para trazabilidad de firmas) y sistemas ERP/SCADA corporativos.
+# GasAndinaApp: Sistema de Gestión de Distribución Logística 🚛🔥
+
+## 📋 Resumen Ejecutivo
+**Gas Andina S.A.** es una empresa peruana líder dedicada a la distribución y comercialización de gas licuado de petróleo (GLP) a nivel nacional. Con una facturación anual de aproximadamente **700 millones de dólares** y una rentabilidad del **18%**, la compañía enfrenta el reto de modernizar sus sistemas manuales, como las órdenes de servicio gestionadas en papel.
+
+Este proyecto presenta el análisis y diseño de una solución móvil integral para optimizar el área de logística, considerada crítica para el despacho de gas a los puntos de entrega.
+
+## 🎯 Objetivos y Metas del Proyecto
+* **Eficiencia Operativa**: Reducir en una cuarta parte (25%) los tiempos de entrega mediante la optimización logística.
+* **Transformación Digital**: Digitalizar la totalidad de las órdenes de servicio en los próximos dos años.
+* **Seguridad y Control**: Aumentar la seguridad en el transporte y almacenamiento mediante el monitoreo en tiempo real.
+* **Innovación**: Integrar IoT y análisis predictivo en la cadena de distribución en un plazo de tres años.
+
+## 🏗️ Arquitectura y Modelado UML
+La solución se diseñó utilizando el lenguaje estandarizado **UML** y la herramienta **Modelio**. La arquitectura se divide en componentes modulares que interactúan con sistemas **ERP** y **SCADA**.
+
+### Actores del Sistema
+1.  **Cliente**: Genera pedidos, recibe notificaciones de estado y valida la entrega mediante firma digital.
+2.  **Despachador**: Supervisa rutas en tiempo real, gestiona incidencias y verifica la finalización de entregas.
+3.  **Conductor**: Ejecuta las entregas físicas, utiliza geolocalización para seguir rutas óptimas y reporta eventos en ruta.
+
+### Componentes Clave
+* **Gestión de Pedidos**: Recepción y procesamiento automático de solicitudes con validación de inventario.
+* **Gestión de Rutas**: Asignación automática utilizando algoritmos de optimización (ej. Dijkstra) considerando tráfico y distancia.
+* **Gestión de Seguimiento**: Monitoreo dinámico del tiempo estimado de llegada (ETA) mediante Machine Learning.
+* **Gestión de Firmas**: Digitalización de la validación final mediante firma electrónica y registro en blockchain para evitar fraudes.
+
+## 📊 Especificaciones Técnicas
+* **Diagrama de Clases**: Basado en una estructura de herencia con la clase base `Persona`, especializada en `Cliente`, `Empleado` y `Conductor`.
+* **Infraestructura**: Despliegue en servidores en la nube con bases de datos PostgreSQL y Amazon Aurora.
+* **Integración**: Conexión directa con el ERP corporativo para facturación automática tras la firma del cliente.
+
+## 📱 Diseño de Interfaz (UX/UI)
+El diseño se centra en la simplicidad y la eficacia operativa, dividiendo el acceso por perfiles de usuario exclusivos:
+* **Menú Cliente**: "Nuevo pedido" y "Mis pedidos".
+* **Menú Despachador**: "Flota en tiempo real" y "Reporte de entregas".
+* **Menú Conductor**: "Reportar incidencias" y "Gestión de pedidos".
+
+## 🎓 Conclusiones
+El desarrollo de **GasAndinaApp** demuestra cómo el diseño centrado en el usuario y una arquitectura de software robusta pueden transformar procesos complejos. La automatización no solo aporta eficiencia técnica, sino que mejora la seguridad y transparencia para los miles de hogares y comercios que dependen del GLP.
+
+---
+*Proyecto académico desarrollado para la asignatura: ADS – Análisis y Diseño de Sistemas (UDEP).*
