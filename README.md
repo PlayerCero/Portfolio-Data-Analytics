@@ -12,6 +12,3 @@
 - **Herramientas:** VS Code, GitHub, DataCamp.
 ---
 
-## 📫 Conectemos
-* **LinkedIn:** [Tu Perfil Aquí]
-* **Tableau Public:** [Tu Link Aquí]
