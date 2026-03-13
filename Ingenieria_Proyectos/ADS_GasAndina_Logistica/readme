@@ -1,43 +1,43 @@
 # GasAndinaApp: Sistema de Gestión de Distribución Logística 🚛🔥
 
 ## 📋 Resumen Ejecutivo
-**Gas Andina S.A.** es una empresa peruana líder dedicada a la distribución y comercialización de gas licuado de petróleo (GLP) a nivel nacional. Con una facturación anual de aproximadamente **700 millones de dólares** y una rentabilidad del **18%**, la compañía enfrenta el reto de modernizar sus sistemas manuales, como las órdenes de servicio gestionadas en papel.
+[cite_start]**Gas Andina S.A.** es una empresa peruana dedicada a la distribución nacional de gas licuado de petróleo (GLP)[cite: 763]. [cite_start]Con una facturación anual aproximada de **700 millones de dólares**, la compañía enfrenta el reto de modernizar sus procesos logísticos, que actualmente dependen de sistemas manuales y órdenes en papel[cite: 790, 795].
 
-Este proyecto presenta el análisis y diseño de una solución móvil integral para optimizar el área de logística, considerada crítica para el despacho de gas a los puntos de entrega.
+[cite_start]Este proyecto presenta el análisis y diseño de una solución móvil integral para optimizar el área de logística, considerada crítica para el almacenamiento y despacho de gas[cite: 766, 782].
 
-## 🎯 Objetivos y Metas del Proyecto
-* **Eficiencia Operativa**: Reducir en una cuarta parte (25%) los tiempos de entrega mediante la optimización logística.
-* **Transformación Digital**: Digitalizar la totalidad de las órdenes de servicio en los próximos dos años.
-* **Seguridad y Control**: Aumentar la seguridad en el transporte y almacenamiento mediante el monitoreo en tiempo real.
-* **Innovación**: Integrar IoT y análisis predictivo en la cadena de distribución en un plazo de tres años.
+## 🎯 Objetivos y Metas
+* [cite_start]**Eficiencia Operativa**: Reducir en un 25% los tiempos de entrega mediante la optimización logística[cite: 785, 787].
+* [cite_start]**Transformación Digital**: Digitalizar el 100% de las órdenes de servicio en un plazo de dos años[cite: 787].
+* [cite_start]**Control en Tiempo Real**: Implementar un sistema de monitoreo y despacho de gas activo las 24 horas[cite: 787].
+* [cite_start]**Innovación Tecnológica**: Integrar análisis predictivo e IoT en la cadena de distribución dentro de tres años[cite: 787].
 
 ## 🏗️ Arquitectura y Modelado UML
-La solución se diseñó utilizando el lenguaje estandarizado **UML** y la herramienta **Modelio**. La arquitectura se divide en componentes modulares que interactúan con sistemas **ERP** y **SCADA**.
+[cite_start]La solución se diseñó bajo estándares de la industria utilizando **UML** y esquemas basados en **TOGAF** para asegurar escalabilidad[cite: 772, 774].
 
 ### Actores del Sistema
-1.  **Cliente**: Genera pedidos, recibe notificaciones de estado y valida la entrega mediante firma digital.
-2.  **Despachador**: Supervisa rutas en tiempo real, gestiona incidencias y verifica la finalización de entregas.
-3.  **Conductor**: Ejecuta las entregas físicas, utiliza geolocalización para seguir rutas óptimas y reporta eventos en ruta.
+* [cite_start]**Cliente**: Genera pedidos digitales, recibe alertas de proximidad y valida la recepción mediante firma electrónica[cite: 835, 837].
+* [cite_start]**Despachador**: Supervisa rutas, gestiona incidencias y visualiza la flota en tiempo real desde una plataforma en la nube[cite: 839, 840].
+* [cite_start]**Conductor**: Recibe secuencias de paradas optimizadas y registra geolocalización y marcas de tiempo de cada entrega[cite: 844, 846].
 
-### Componentes Clave
-* **Gestión de Pedidos**: Recepción y procesamiento automático de solicitudes con validación de inventario.
-* **Gestión de Rutas**: Asignación automática utilizando algoritmos de optimización (ej. Dijkstra) considerando tráfico y distancia.
-* **Gestión de Seguimiento**: Monitoreo dinámico del tiempo estimado de llegada (ETA) mediante Machine Learning.
-* **Gestión de Firmas**: Digitalización de la validación final mediante firma electrónica y registro en blockchain para evitar fraudes.
+### Módulos Funcionales
+* [cite_start]**Gestión de Pedidos**: Procesamiento automático con validación de inventario en tiempo real[cite: 851, 865].
+* [cite_start]**Gestión de Rutas**: Algoritmos de optimización para calcular la secuencia de paradas más eficiente[cite: 812, 903].
+* [cite_start]**Gestión de Seguimiento**: Monitoreo dinámico del progreso de cada orden mediante APIs de mapas[cite: 854, 919].
+* [cite_start]**Gestión de Firmas**: Validación biométrica y registro digital para habilitar la facturación automática mediante el ERP[cite: 857, 958].
 
-## 📊 Especificaciones Técnicas
-* **Diagrama de Clases**: Basado en una estructura de herencia con la clase base `Persona`, especializada en `Cliente`, `Empleado` y `Conductor`.
-* **Infraestructura**: Despliegue en servidores en la nube con bases de datos PostgreSQL y Amazon Aurora.
-* **Integración**: Conexión directa con el ERP corporativo para facturación automática tras la firma del cliente.
+## 📊 Especificaciones Técnicas e Infraestructura
+* [cite_start]**Modelado de Datos**: Diseño de base de datos relacional orientada a la integridad y trazabilidad de los despachos[cite: 1313, 1315].
+* [cite_start]**Backend y Nube**: Despliegue en servidores virtuales integrados con sistemas **ERP** y **SCADA** para monitoreo de tuberías y tanques[cite: 831, 1333].
+* [cite_start]**Tecnologías Sugeridas**: PostgreSQL, Amazon Aurora y APIs de geolocalización avanzada[cite: 1318, 1327].
 
-## 📱 Diseño de Interfaz (UX/UI)
-El diseño se centra en la simplicidad y la eficacia operativa, dividiendo el acceso por perfiles de usuario exclusivos:
-* **Menú Cliente**: "Nuevo pedido" y "Mis pedidos".
-* **Menú Despachador**: "Flota en tiempo real" y "Reporte de entregas".
-* **Menú Conductor**: "Reportar incidencias" y "Gestión de pedidos".
+## 📱 Diseño de Experiencia de Usuario (UX/UI)
+[cite_start]El prototipo móvil se divide en perfiles exclusivos para garantizar una operatividad enfocada[cite: 1343, 1345]:
+* [cite_start]**Interfaz Cliente**: Módulos de "Nuevo pedido" y "Seguimiento en vivo"[cite: 1347].
+* [cite_start]**Interfaz Despachador**: Dashboards de "Flota en tiempo real" y reportes de desempeño[cite: 1348].
+* [cite_start]**Interfaz Conductor**: Herramientas de "Gestión de pedidos" y reporte de incidencias multimedia[cite: 1349].
 
 ## 🎓 Conclusiones
-El desarrollo de **GasAndinaApp** demuestra cómo el diseño centrado en el usuario y una arquitectura de software robusta pueden transformar procesos complejos. La automatización no solo aporta eficiencia técnica, sino que mejora la seguridad y transparencia para los miles de hogares y comercios que dependen del GLP.
+[cite_start]El desarrollo de **GasAndinaApp** demuestra cómo el diseño de sistemas móviles puede transformar flujos de trabajo complejos en procesos ordenados y predecibles[cite: 1368, 1380]. [cite_start]La automatización no solo optimiza recursos, sino que mejora directamente la seguridad y transparencia del servicio para el usuario final[cite: 1372, 1382].
 
 ---
-*Proyecto académico desarrollado para la asignatura: ADS – Análisis y Diseño de Sistemas (UDEP).*
+*Proyecto académico para la asignatura: ADS – Análisis y Diseño de Sistemas (Universidad de Piura - UDEP).*
