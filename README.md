@@ -1,5 +1,5 @@
 # 🚀 Data Analytics & Business Intelligence Portfolio
-### **Eric Salinas** | Estudiante de 9no ciclo de Ingeniería Industrial en la **Universidad de Piura (UDEP)**
+### **Eric Salinas** | Estudiante de 8vo ciclo de Ingeniería Industrial en la **Universidad de Piura (UDEP)**
 📍 Lima, Perú | Especializado en **Optimización de Procesos, Finanzas y Analítica Predictiva**
 
 ---
