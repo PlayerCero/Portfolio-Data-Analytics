@@ -1,4 +1,4 @@
-# 📊 Data Analytics & Business Intelligence Portfolio
+# 🚀 Data Analytics & Business Intelligence Portfolio
 ### **Eric Salinas** | Estudiante de 9no ciclo de Ingeniería Industrial en la **Universidad de Piura (UDEP)**
 📍 Lima, Perú | Especializado en **Optimización de Procesos, Finanzas y Analítica Predictiva**
 
@@ -8,11 +8,11 @@
 
 | Área / Carpeta | Stack Tecnológico | Proyectos Clave y Capacidad Técnica | Valor Estratégico e Impacto |
 | :--- | :--- | :--- | :--- |
-| **📊 PowerBI_Proyectos** | Power BI, DAX Avanzado, Modelado de Datos, Inteligencia de Tiempo. | **Control Financiero y HR Analytics:** Desarrollo de dashboards gerenciales con arquitectura de medidas modular (Agregación → Lógica → KPIs). | Logro de **108% de utilidad esperada** mediante control de costos e identificación de alertas de liquidez críticas (67% de cumplimiento). |
-| **📉 Exel_Proyectos** | VBA (Macros), Solver, Power Query, Funciones Estadísticas Anidadas. | **Automatización y Optimización:** Uso de motor Simplex LP para costos de insumos, scripts de VBA para integración con Outlook (RPA) y Dashboards dinámicos. | Implementación de **Analítica Predictiva (ETS)** para planeamiento de demanda y matrices multicriterio para gestión de proveedores. |
-| **⚙️ Ingenieria_Proyectos** | UML, BPM, Teoría de Colas (M/M/s), Simulación Montecarlo, IoT. | **Ingeniería de Operaciones:** Optimización de redes logísticas, gestión de inventarios (EOQ/ROP) y telemetría en tiempo real con ESP32. | Reducción de tiempos de espera en servicios y reingeniería de procesos administrativos mediante análisis AS-IS y TO-BE. |
-| **🐍 Python_Data_Science** | Python (Pandas, Scikit-Learn, TensorFlow, NumPy), Jupyter. | **Machine Learning Labs:** Desarrollo de modelos de Redes Neuronales, Clustering y análisis de Series de Tiempo para pronósticos de mercado. | Automatización de limpieza de datos masivos y transformación de datos brutos en insights accionables para la toma de decisiones. |
-| **🗄️ SQL_Proyectos** | SQL, PostgreSQL, Procesos ETL, Análisis de Datos. | **Gestión de Datos Estructurados:** Extracción y transformación de bases de datos complejas (Salud Mental, Emisiones Ambientales). | Estructuración técnica de datos para alimentar modelos analíticos de alto nivel y asegurar la integridad de la información empresarial. |
+| **📊 PowerBI_Proyectos** | Power BI, DAX Avanzado, Modelado de Datos, Inteligencia de Tiempo. | **Control Financiero y HR Analytics:** Desarrollo de dashboards gerenciales con arquitectura de medidas modular (Agregación → Lógica → KPIs). | Facilitación de la toma de decisiones estratégicas mediante la visualización de KPIs críticos y el monitoreo continuo de la rentabilidad y liquidez. |
+| **📉 Exel_Proyectos** | VBA (Macros), Solver, Power Query, Funciones Estadísticas Anidadas. | **Automatización y Optimización:** Uso de motor Simplex LP para costos de insumos, scripts de VBA para integración con Outlook (RPA) y Dashboards dinámicos. | Incremento de la eficiencia operativa a través de la automatización de procesos repetitivos y el modelado de escenarios para la planificación de la demanda. |
+| **⚙️ Ingenieria_Proyectos** | UML, BPM, Teoría de Colas (M/M/s), Simulación Montecarlo, IoT. | **Ingeniería de Operaciones:** Optimización de redes logísticas, gestión de inventarios (EOQ/ROP) y telemetría en tiempo real con ESP32. | Optimización de sistemas complejos y flujos de trabajo mediante la aplicación de investigación de operaciones y metodologías de reingeniería de procesos. |
+| **🐍 Python_Data_Science** | Python (Pandas, Scikit-Learn, TensorFlow, NumPy), Jupyter. | **Machine Learning Labs:** Desarrollo de modelos de Redes Neuronales, Clustering y análisis de Series de Tiempo para pronósticos de mercado. | Generación de valor predictivo y extracción de patrones en grandes volúmenes de datos para sustentar decisiones preventivas y proyecciones de negocio. |
+| **🗄️ SQL_Proyectos** | SQL, PostgreSQL, Procesos ETL, Análisis de Datos. | **Gestión de Datos Estructurados:** Extracción y transformación de bases de datos complejas para análisis técnico y sectorial. | Garantía de la integridad, calidad y disponibilidad de la información empresarial mediante el diseño de flujos de datos robustos para soporte analítico. |
 
 ---
 
