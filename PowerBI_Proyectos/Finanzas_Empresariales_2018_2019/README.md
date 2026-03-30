@@ -32,11 +32,25 @@ El objetivo principal es proporcionar a la alta gerencia una herramienta de toma
 
 ## 🧠 Arquitectura de Medidas DAX (Lógica de Ingeniería)
 
-Para garantizar la precisión de los indicadores, estructuré el código en capas modulares:
+El modelo de datos se basa en una estructura de capas (Agregación, Lógica de Negocio, Inteligencia de Tiempo y KPIs), garantizando que los cálculos sean modulares y escalables.
 
-### 1. Capa de Lógica de Negocio (Filtrado Dinámico)
-Utilicé `CALCULATE` para segmentar los datos reales y proyectados:
 ```dax
-Ingresos = CALCULATE(SUM(Finanzas[Cantidad]), Finanzas[Tipos] = "Ingresos")
-Gastos = CALCULATE(SUM(Finanzas[Cantidad]), Finanzas[Tipos] = "Gastos")
-Meta = CALCULATE(SUM(Expectativas[Cantidad]), Expectativas[Tipo] = "Metas")
+// 1. CAPA DE AGREGACIÓN (Factores Base)
+Total Finanzas = SUM(Finanzas[Cantidad])
+Total Expectativa = SUM(Expectativas[Cantidad])
+
+// 2. CAPA DE LÓGICA DE NEGOCIO (Filtrado Dinámico)
+Ingresos = CALCULATE([Total Finanzas], Finanzas[Tipos] = "Ingresos")
+Gastos = CALCULATE([Total Finanzas], Finanzas[Tipos] = "Gastos")
+Meta = CALCULATE([Total Expectativa], Expectativas[Tipo] = "Metas")
+Presupuesto = CALCULATE([Total Expectativa], Expectativas[Tipo] = "Presupuesto")
+
+// 3. CAPA DE INTELIGENCIA AVANZADA (Running Totals / Cash Flow)
+Saldo = CALCULATE([Utilidad], FILTER(ALL(Finanzas), Finanzas[Fecha] <= MAX(Finanzas[Fecha])))
+Saldo esperado = CALCULATE([Utilidad Esperada], FILTER(ALL(Expectativas), Expectativas[Fecha] <= MAX(Expectativas[Fecha])))
+
+// 4. CAPA DE INDICADORES DE GESTIÓN (KPIs Finales)
+Cuota Ingresos = DIVIDE([Ingresos], [Meta], 0)
+Cuota de Gastos = DIVIDE([Gastos], [Presupuesto], 0)
+Cuota Utilidad = DIVIDE([Utilidad], [Utilidad Esperada], 0)
+Cuota Saldo = DIVIDE([Saldo], [Saldo esperado], 0)
