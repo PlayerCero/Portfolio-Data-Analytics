@@ -1,58 +1,41 @@
-# 📊 SQL Portfolio: Data Engineering & Business Intelligence
-Este repositorio contiene una colección de proyectos y soluciones avanzadas en SQL, abarcando desde el diseño de arquitecturas relacionales hasta el análisis predictivo y descriptivo para la toma de decisiones.
+# 📊 Portfolio de Data Analytics, Business Intelligence & Ingeniería Industrial
 
-## 🚀 Proyectos Incluidos
+¡Hola! Bienvenido a mi portafolio oficial. Aquí documento mi capacidad para transformar datos complejos en decisiones estratégicas y soluciones de ingeniería, enfocándome en la optimización de procesos, la rentabilidad y el análisis financiero.
 
-| Proyecto | Tecnologías | Enfoque Principal |
-| :--- | :--- | :--- |
-| **Sistema "La Tienda"** | MySQL / MariaDB | Normalización (3FN), Diseño DDL y KPIs de Ventas. |
-| **Health Analytics** | PostgreSQL | Análisis estadístico de Salud Mental en estudiantes. |
-| **Solucionario Académico (UDEP)** | SQL Standard | Modelado de eventos y consultas complejas (Joins/Subqueries). |
+## 👨‍💻 Sobre mí
+Soy Eric Salinas, estudiante del 9no ciclo de Ingeniería Industrial en la Universidad de Piura (UDEP). Resido en Lima y actualmente me encuentro en la búsqueda de oportunidades de prácticas pre-profesionales en los sectores de Data Analytics, Business Intelligence y Finanzas.
 
----
+Mi perfil combina una sólida base cuantitativa con habilidades avanzadas en programación y visualización para la toma de decisiones. Actualmente, me encuentro especializándome mediante cursos intensivos de verano en el CTIC UNI sobre Python con IA, Data Science y Series de Tiempo.
 
-## 🛠️ Detalle de los Proyectos
+## 🏆 Proyectos Destacados
 
-### 1. Sistema Integrado de Gestión "La Tienda" & Almacén
-**Contexto:** Diseño de una base de datos para el control de inventarios, compras y ventas, optimizando la integridad de los datos en un entorno retail.
+### 1. Inteligencia Financiera: Control Presupuestario y Liquidez (Power BI)
+* **Objetivo:** Dashboard integral diseñado para monitorear el cumplimiento de metas de ingresos y controlar desviaciones en el presupuesto de gastos durante un periodo de dos años.
+* **Impacto:** Implementación de alertas tempranas en el flujo de caja (detectando un mes crítico con solo 67% de liquidez) y evaluación de rentabilidad logrando un 108% de la utilidad esperada.
+* **Tecnología:** Arquitectura modular DAX con capas de Agregación, Lógica de Negocio e Inteligencia de Tiempo.
 
-* **Arquitectura:** Aplicación de **Tercera Forma Normal (3FN)** para eliminar redundancias, gestionando entidades multivaluadas (teléfonos de representantes).
-* **Business Intelligence (KPIs):**
-    * Identificación de **Top Performers** (Ranking de productividad por personal).
-    * Análisis de **Demanda Crítica** (Top 5 productos con mayor rotación).
-    * Auditoría de carga laboral mediante cláusulas `HAVING`.
-    * Detección de inactividad operativa con **Data Mining** (subconsultas `NOT IN`).
+### 2. Optimización y Automatización para la Cadena de Suministro (Excel Avanzado & VBA)
+* **Objetivo:** Sistematización de la toma de decisiones operativas mediante modelos matemáticos y automatización de reportes (RPA).
+* **Impacto:** Configuración del motor Simplex LP para minimizar costos de insumos y aplicación de Suavizamiento Exponencial (ETS) para proyectar demanda futura.
+* **Tecnología:** Programación VBA, Solver, Macros para procesos ETL y creación de matrices multicriterio con Dashboards dinámicos.
 
-### 2. Análisis de Salud Mental en Estudiantes Internacionales
-**Contexto:** Proyecto de análisis de datos enfocado en métricas de bienestar psicológico basadas en la duración de la estancia.
+## 📂 Estructura Técnica del Repositorio
 
-* **Métricas Analizadas:** Promedios de depresión (PHQ-9), conexión social (SCS) y estrés aculturativo (ASISS).
-* **Resultados:** El script procesa conjuntos de datos para encontrar correlaciones entre el tiempo de permanencia y la mejora en los indicadores de salud mental.
+* 📁 **[`PowerBI_Proyectos/`](./PowerBI_Proyectos)**: Modelado de datos e inteligencia de negocios. Además del control financiero, incluye dashboards de gestión de talento humano (HR Analytics) con segmentación dinámica de compensaciones y desempeño.
+* 📁 **[`Exel_Proyectos/`](./Exel_Proyectos)**: Soluciones de Investigación de Operaciones. Incluye evaluación cuantitativa de proveedores, funciones estadísticas anidadas complejas y macros que interactúan directamente con la librería de Outlook para notificaciones automatizadas.
+* 📁 **[`Ingenieria_Proyectos/`](./Ingenieria_Proyectos)**: Casos aplicados de gestión de cadena de suministro (EOQ, ROP), Teoría de Colas para reducción de tiempos de espera, y control estadístico de procesos (SPC, Simulación Montecarlo).
+* 📁 **[`Python_Data_Science/`](./Python_Data_Science)**: Laboratorios de Machine Learning donde exploro la lógica interna de algoritmos de predicción, redes neuronales y clustering.
+* 📁 **[`SQL_Proyectos/`](./SQL_Proyectos)**: Consultas estructuradas, extracción y transformación de datos (ETL) utilizando PostgreSQL para alimentar modelos analíticos.
 
-### 3. Diseño y Consultas Avanzadas (Casos UDEP)
-**Contexto:** Resolución de casos complejos de negocio que incluyen gestión de eventos universitarios y retail de moda.
+## 🛠️ Stack Tecnológico
 
-* **Modelado Relacional:** Creación de un sistema de captación de alumnos (Colegios, Facultades y Expositores).
-* **Manipulación de Datos:**
-    * Uso de `LEFT JOIN` para auditoría de pedidos sin boleta.
-    * Análisis de **Clientes VIP** con filtrado de montos agregados (`SUM` > 10,000).
-    * Operaciones de limpieza selectiva mediante lógica de filtrado por fechas y patrones de texto.
+* **BI & Visualización:** Power BI (DAX Avanzado), Tableau, Excel Avanzado (VBA, Power Query, Solver).
+* **Programación & Datos:** Python (Pandas, Scikit-Learn, TensorFlow, NumPy), SQL (PostgreSQL).
+* **Ingeniería & Operaciones:** Modelado Matemático, Control Estadístico (SPC), Simulación Estocástica, Series de Tiempo (Forecasting), Diseño UML y BPM.
 
 ---
+### 📫 Contacto
+* **LinkedIn:** [Añade tu enlace de LinkedIn aquí]
+* **Email:** [Añade tu correo electrónico aquí]
 
-## 💡 Skills Técnicas Demostradas
-* **DDL (Data Definition Language):** Creación de esquemas, llaves primarias/foráneas y restricciones de integridad.
-* **DQL (Data Query Language):** Consultas multitable (Joins), Agregaciones (`GROUP BY`, `HAVING`) y Subconsultas.
-* **Optimización:** Aplicación de lógica booleana y filtrado temporal eficiente.
-* **Normalización:** Reducción de anomalías de inserción y actualización de datos.
-
----
-
-## 📂 Cómo utilizar este repositorio
-1. Clona el repositorio: `git clone https://github.com/TU_USUARIO/nombre-repo.git`
-2. Los archivos `.sql` están listos para ser importados en cualquier entorno compatible con MySQL o PostgreSQL según corresponda.
-
----
-**Autor:** [Eric Salinas](https://github.com/TU_USUARIO)
-* Estudiante de **Ingeniería Industrial** | Universidad de Piura (UDEP)
-* Interesado en Data Science, Business Intelligence y Finanzas.
+*Gracias por visitar mi portafolio. Si tienes alguna oportunidad o proyecto interesante donde la analítica de datos pueda generar valor, no dudes en contactarme.*
