@@ -28,5 +28,3 @@ Este repositorio compila soluciones avanzadas desarrolladas en Microsoft Excel, 
 **Eric Salinas**
 * Estudiante de Ingeniería Industrial | Analista de Datos
 * [LinkedIn](TU_LINK_DE_LINKEDIN_AQUI)
-* Estudiante de Ingeniería Industrial | Analista de Datos
-* [LinkedIn](TU_LINK_DE_LINKEDIN_AQUI)
