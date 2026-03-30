@@ -26,8 +26,8 @@
 ---
 
 ## 📫 Contacto
-* **LinkedIn:** [Tu link aquí]
-* **Email:** [Tu correo aquí]
+* **LinkedIn:** [https://www.linkedin.com/in/eric-bekim-salinas-cajaleon-30153232b/]
+* **Email:** [ericsalinas332@gmail.com]
 * **Ubicación:** Pueblo Libre, Lima
 
 ---
