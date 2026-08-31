@@ -1,34 +1,48 @@
-# 🧪 Laboratorios de Machine Learning
-Este espacio está dedicado a mi proceso de formación. Aquí documento los algoritmos y conceptos estudiados en clase, adaptándolos para entender su funcionamiento interno.
-# 🤖 Data Science & Machine Learning: Modelado Predictivo y Clasificación
+# 🐍 Data Science & Machine Learning — Laboratorios
 
-Este repositorio contiene la implementación de diversos algoritmos de Aprendizaje Automático (Machine Learning), enfocados en la resolución de problemas de clasificación, regresión y agrupamiento (clustering) aplicados al análisis de datos industriales y de negocios.
+Implementación de los algoritmos fundamentales de aprendizaje automático, cada uno desde su mecánica interna: cómo se elige el hiperparámetro, dónde empieza el sobreajuste y qué se pierde al reducir dimensiones.
 
-## 📂 Algoritmos e Implementaciones
-
-| Algoritmo / Módulo | Carpeta del Proyecto | Herramientas Clave | Aplicación y Objetivo |
-| :--- | :--- | :--- | :--- |
-| **K-Means Clustering** | `01_Kmeans` | Scikit-learn, Matplotlib | Segmentación de datos no etiquetados para identificación de patrones y grupos. |
-| **K-Nearest Neighbors** | `02_Knn` | Scikit-learn, NumPy | Clasificación supervisada basada en la proximidad y similitud de características. |
-| **Arboles de Decisión** | `03_DecisionTree` | Scikit-learn, Graphviz | Modelado de reglas de decisión jerárquicas para predicción de categorías. |
-| **PCA (Análisis de Componentes)** | `04_PCA` | Scikit-learn, Pandas | Reducción de dimensionalidad para visualización y optimización de modelos. |
-| **Redes Neuronales** | `05_NeuralNetworks` | TensorFlow / Keras | Implementación de modelos de Deep Learning para patrones complejos no lineales. |
-| **Validación Cruzada** | `06_Kfolds` | K-Fold Cross Validation | Evaluación robusta del rendimiento de los modelos para mitigar el sobreajuste (overfitting). |
-| **Persistencia de Modelos** | `07_Pickle` | Pickle Library | Serialización y almacenamiento de modelos entrenados para su despliegue en producción. |
+> **Nota honesta sobre los datos.** Estos siete laboratorios usan el dataset **Iris** (150 observaciones, 4 características, 3 clases). Es un conjunto de referencia clásico, deliberadamente pequeño y limpio: el objetivo aquí es **entender y comparar el comportamiento de los algoritmos**, no resolver un caso de negocio. Los casos con datos reales de empresas están en [PowerBI_Proyectos](../PowerBI_Proyectos), [Ingenieria_Proyectos](../Ingenieria_Proyectos) y [Automatizaciones_IA](../Automatizaciones_IA).
 
 ---
 
-### 🛠️ Stack Tecnológico
-* **Lenguaje:** Python 3.x
-* **Librerías de ML:** Scikit-learn, TensorFlow, Keras.
-* **Manipulación de Datos:** Pandas, NumPy.
-* **Visualización:** Matplotlib, Seaborn.
+## 📓 Notebooks
 
-### 📈 Metodología de Trabajo
-Cada notebook sigue un flujo de trabajo de Ciencia de Datos estándar:
-1. **EDA (Análisis Exploratorio):** Limpieza y comprensión de la distribución de los datos.
-2. **Preprocesamiento:** Escalado de variables, codificación y reducción de dimensionalidad (PCA).
-3. **Entrenamiento:** Ajuste de hiperparámetros y selección del modelo óptimo.
-4. **Validación:** Uso de métricas como Accuracy, Precision, Recall y validación cruzada (K-Folds).
+Todos incluyen sus **salidas y gráficos renderizados**, así que se pueden leer directamente en GitHub sin ejecutar nada.
+
+| Notebook | Algoritmo | Qué se explora en él |
+| :--- | :--- | :--- |
+| **[kmeans_2025_ii.ipynb](Laboratorios_ML/kmeans_2025_ii.ipynb)** | K-Means | Normalización min-max, curva de inercia para k de 1 a 20 con 50 aleatorizaciones, y validación del codo con `KElbowVisualizer` de Yellowbrick |
+| **[knn_2025_II.ipynb](Laboratorios_ML/knn_2025_II.ipynb)** | K-Nearest Neighbors | Barrido de k de 1 a 20 con **100 particiones aleatorias por valor**, comparando accuracy de entrenamiento contra prueba para localizar el punto de sobreajuste |
+| **[dt_2025_II.ipynb](Laboratorios_ML/dt_2025_II.ipynb)** | Árboles de decisión | Curva de profundidad de 1 a 15 con 50 repeticiones: dónde el árbol deja de generalizar y empieza a memorizar |
+| **[pca_2025_ii.ipynb](Laboratorios_ML/pca_2025_ii.ipynb)** | PCA | Varianza explicada acumulada por componente y proyección a 2D para visualizar la separabilidad de clases |
+| **[kfolds_2025_ii.ipynb](Laboratorios_ML/kfolds_2025_ii.ipynb)** | Validación cruzada | K-Fold como alternativa robusta al *hold-out* simple, para no depender de una sola partición |
+| **[redes_neuronales.ipynb](Laboratorios_ML/redes_neuronales.ipynb)** | Redes neuronales | Red densa en TensorFlow/Keras: `LabelEncoder`, `StandardScaler` y `classification_report` con precision, recall y F1 |
+| **[pickle_2025_ii.ipynb](Laboratorios_ML/pickle_2025_ii.ipynb)** | Serialización | Persistencia del modelo entrenado con Pickle para reutilizarlo sin reentrenar — el paso previo al despliegue |
 
 ---
+
+## 🔬 Criterio metodológico
+
+Lo que hace comparable a estos laboratorios no es el dataset, sino el método:
+
+- **Nunca una sola partición.** Cada barrido de hiperparámetros repite el `train_test_split` entre 50 y 100 veces y promedia. Un solo split da un número; cien dan una tendencia.
+- **Entrenamiento *contra* prueba, siempre en el mismo gráfico.** Es la única forma de ver el sobreajuste en lugar de suponerlo.
+- **Escalado antes de cualquier modelo basado en distancia.** K-Means y KNN miden distancias: sin normalizar, la variable de mayor rango domina el resultado.
+
+---
+
+## 🛠️ Stack
+
+`Python 3` · `Scikit-learn` · `TensorFlow / Keras` · `Pandas` · `NumPy` · `Matplotlib` · `Yellowbrick`
+
+---
+
+### ▶️ Para ejecutarlos
+
+Los notebooks fueron desarrollados en **Google Colab** y cargan el dataset con `files.upload()`. Para correrlos localmente, sustituye esa celda por la carga directa:
+
+```python
+from sklearn.datasets import load_iris
+iris = load_iris(as_frame=True).frame
+```

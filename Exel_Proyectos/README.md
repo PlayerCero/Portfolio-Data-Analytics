@@ -27,4 +27,4 @@ Este repositorio compila soluciones avanzadas desarrolladas en Microsoft Excel, 
 ### 👤 Autor
 **Eric Salinas**
 * Estudiante de Ingeniería Industrial | Analista de Datos
-* [LinkedIn](TU_LINK_DE_LINKEDIN_AQUI)
+* [LinkedIn](https://www.linkedin.com/in/eric-bekim-salinas-cajaleon-30153232b/) · [Portafolio web](https://ericsalinas-data.lovable.app)

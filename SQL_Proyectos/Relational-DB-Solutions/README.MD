@@ -49,11 +49,11 @@ Este repositorio contiene una colección de proyectos y soluciones avanzadas en 
 ---
 
 ## 📂 Cómo utilizar este repositorio
-1. Clona el repositorio: `git clone https://github.com/TU_USUARIO/nombre-repo.git`
+1. Clona el repositorio: `git clone https://github.com/PlayerCero/Portfolio-Data-Analytics.git`
 2. Los archivos `.sql` están listos para ser importados en cualquier entorno compatible con MySQL o PostgreSQL según corresponda.
 
 ---
-**Autor:** [Eric Salinas](https://github.com/TU_USUARIO)
+**Autor:** [Eric Salinas](https://github.com/PlayerCero)
 * Estudiante de **Ingeniería Industrial** | Universidad de Piura (UDEP)
 * Interesado en Data Science, Business Intelligence y Finanzas.
 
