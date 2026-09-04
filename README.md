@@ -10,7 +10,7 @@ SQL para modelar · Python para analizar · Power BI para que el negocio lo enti
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Eric_Salinas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eric-bekim-salinas-cajaleon-30153232b/)
 [![Email](https://img.shields.io/badge/Email-eric.salinas@alum.udep.edu.pe-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:eric.salinas@alum.udep.edu.pe)
 
-`Python` · `SQL` · `Power BI` · `DAX` · `Excel/VBA` · `n8n` · `Make` · `Google Gemini` · `RAG`
+`Python` · `SQL` · `Power BI` · `DAX` · `Excel/VBA` · `Power Apps` · `Power Automate` · `n8n` · `Make` · `Google Gemini` · `RAG`
 
 📍 Lima, Perú · 10.º ciclo en la **Universidad de Piura** · Becario **Beca 18** · Egreso: diciembre 2026
 
@@ -21,9 +21,9 @@ SQL para modelar · Python para analizar · Power BI para que el negocio lo enti
 
 ---
 
-## ⚡ Los tres proyectos que mejor me describen
+## ⚡ Los cuatro proyectos que mejor me describen
 
-Si solo tienes dos minutos, mira estos tres. Cada uno enlaza a su carpeta con el archivo fuente, los datos y la documentación completa.
+Si solo tienes dos minutos, mira estos cuatro. Cada uno enlaza a su carpeta con el archivo fuente, los datos y la documentación completa.
 
 ---
 
@@ -71,6 +71,25 @@ Diagnóstico de calidad de servicio en **"La Tapadita"**, con datos levantados e
 **Por qué importa:** el Pareto mostró que **el 68 % de los retrasos venía de solo dos causas** — problemas de comunicación interna y alta rotación de personal. Eso convierte una queja difusa ("el servicio es lento") en dos acciones concretas.
 
 📁 **[Ver el análisis completo →](Ingenieria_Proyectos/Service_Quality_Analytics_LaTapadita)**
+
+---
+
+### 4️⃣ CRM de ventas en Power Apps + Power Automate · Power Platform
+
+<a href="PowerApps_Proyectos/CRM_Ventas_PowerApps">
+<img src="PowerApps_Proyectos/CRM_Ventas_PowerApps/IMAGENES/02-app-registrar-venta.jpg" width="100%">
+</a>
+
+Aplicación canvas de **8 pantallas** sobre **5 listas de SharePoint**, con **4 flujos de Power Automate** disparados de cuatro formas distintas: creación de un registro, llamada desde la propia app, respuesta de Microsoft Forms y ejecución programada.
+
+| Decisión de diseño | Qué evita |
+| :--- | :--- |
+| `Ventas` guarda **IDs**, no nombres — `CbContacto.Selected.ID` | Que *"Eric bekim"* y *"ERIC BEKIM"* terminen contando como dos clientes distintos |
+| El precio total se **deriva**, no se teclea — `Value(txtCantidad.Text) * CbProducto.Selected.Precio` | El error clásico del registro en Excel: un total mal escrito que nadie detecta hasta el cierre de mes |
+
+**Por qué importa:** los flujos de correo **no terminan en "enviar"**, terminan en *Actualizar elemento* — escriben en la propia lista de SharePoint qué se envió y cuándo. Un flujo que solo manda correos es invisible cuando falla; uno que deja rastro dentro del registro se audita sin abrir el historial de ejecuciones.
+
+📁 **[Ver el modelo de datos, las fórmulas Power Fx y los 4 flujos →](PowerApps_Proyectos/CRM_Ventas_PowerApps)**
 
 ---
 
