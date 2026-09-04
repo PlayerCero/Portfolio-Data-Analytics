@@ -80,6 +80,7 @@ Diagnóstico de calidad de servicio en **"La Tapadita"**, con datos levantados e
 | :--- | :--- | :--- | :--- |
 | **[📊 PowerBI_Proyectos](./PowerBI_Proyectos)** | Control financiero y presupuestario · HR Analytics con segmentación demográfica y por banda salarial | `Power BI` `DAX` `Power Query` | 🖼️ 13 capturas · 📦 archivos `.pbix` · 📄 datasets |
 | **[🤖 Automatizaciones_IA](./Automatizaciones_IA)** | 9 flujos: agente RAG, pipeline de embeddings, alertas de KPI con y sin IA, generación documental, integraciones | `n8n` `Make` `Gemini` `RAG` | 🖼️ 11 capturas · ⏱️ registros de ejecución reales |
+| **[⚡ PowerApps_Proyectos](./PowerApps_Proyectos)** | CRM de ventas en Power Apps sobre SharePoint: 8 pantallas, modelo relacional por IDs y 4 flujos de Power Automate | `Power Apps` `Power Fx` `Power Automate` `SharePoint` | 🖼️ 21 capturas · 🔤 fórmulas Power Fx documentadas |
 | **[🐍 Python_Data_Science](./Python_Data_Science)** | 7 laboratorios de ML: K-Means, KNN, árboles, PCA, K-Folds, redes neuronales, serialización | `Python` `Scikit-learn` `TensorFlow` | 📓 notebooks con gráficos renderizados |
 | **[🗄️ SQL_Proyectos](./SQL_Proyectos)** | Diseño de esquemas en 3FN, KPIs de almacén, análisis en PostgreSQL | `MySQL` `PostgreSQL` `SQL Server` | 💾 scripts `.sql` comentados |
 | **[📉 Exel_Proyectos](./Exel_Proyectos)** | 13 soluciones: Solver/Simplex, macros VBA, dashboards, previsión ETS, RPA con Outlook | `Excel` `VBA` `Solver` `Power Query` | 🖼️ 4 capturas · 📦 archivos `.xlsm` funcionales |
@@ -144,6 +145,7 @@ Becario **Beca 18** (PRONABEC), beca integral por alto rendimiento académico ·
 
 - **¿Vienes de una vacante de BI?** → [PowerBI_Proyectos](./PowerBI_Proyectos) y luego [SQL_Proyectos](./SQL_Proyectos).
 - **¿De una vacante de automatización o IA?** → [Automatizaciones_IA](./Automatizaciones_IA).
+- **¿De una vacante de Power Platform / aplicaciones internas?** → [PowerApps_Proyectos](./PowerApps_Proyectos).
 - **¿De operaciones, supply chain o mejora de procesos?** → [Ingenieria_Proyectos](./Ingenieria_Proyectos).
 - **¿Quieres ver código?** → los notebooks en [Python_Data_Science](./Python_Data_Science) y los scripts en [SQL_Proyectos](./SQL_Proyectos).
 
