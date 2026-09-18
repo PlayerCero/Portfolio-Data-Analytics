@@ -21,13 +21,33 @@ SQL para modelar · Python para analizar · Power BI para que el negocio lo enti
 
 ---
 
-## ⚡ Los cuatro proyectos que mejor me describen
+## ⚡ Los cinco proyectos que mejor me describen
 
-Si solo tienes dos minutos, mira estos cuatro. Cada uno enlaza a su carpeta con el archivo fuente, los datos y la documentación completa.
+Si solo tienes dos minutos, mira estos cinco. Cada uno enlaza a su carpeta con el archivo fuente, los datos y la documentación completa.
 
 ---
 
-### 1️⃣ Control presupuestario y alerta de liquidez · Power BI
+### 1️⃣ Customer Shopping Behavior · proyecto end-to-end Python → SQL Server → Power BI
+
+<a href="Proyectos_End_to_End/Customer_Shopping_Behavior">
+<img src="Proyectos_End_to_End/Customer_Shopping_Behavior/IMAGENES/01-dashboard-customer-behavior.png" width="100%">
+</a>
+
+Ciclo completo de analítica sobre **3,900 clientes** de una empresa retail: limpieza y feature engineering en **pandas**, carga a una base de **SQL Server creada por código desde el propio notebook**, **10 preguntas de negocio** resueltas en **T-SQL** (subconsultas, CTEs, agregación condicional y funciones de ventana) y un **tablero interactivo en Power BI** con 3 medidas DAX y 4 segmentadores.
+
+| Hallazgo | Cifra |
+| :--- | :--- |
+| Los hombres "generan 2.1× más ingreso"… | …porque son **68 % de la base**. Por compra, las mujeres gastan **$60.25 frente a $59.54** |
+| Efecto del programa de suscripción sobre el ticket | **$59 vs $59** — nulo, con solo 27 % de penetración |
+| Variación del ticket promedio en **todas** las dimensiones del dataset | entre **0 % y 11.4 %** |
+
+**Por qué importa:** el ticket promedio resultó **plano en género, edad, categoría y suscripción**. Eso significa que todas las brechas de ingreso que muestran los gráficos son brechas de **volumen**, no de gasto — y que la recomendación intuitiva ("concentrar el marketing en hombres, que es donde está el dinero") es exactamente la decisión equivocada. El dato dice que es un problema de **adquisición**, no de targeting.
+
+📁 **[Ver el pipeline completo, las 10 consultas comentadas y el tablero →](Proyectos_End_to_End/Customer_Shopping_Behavior)**
+
+---
+
+### 2️⃣ Control presupuestario y alerta de liquidez · Power BI
 
 <a href="PowerBI_Proyectos/Finanzas_Empresariales_2018_2019">
 <img src="PowerBI_Proyectos/Finanzas_Empresariales_2018_2019/IMAGENES/1773258466503_page-0001.jpg" width="100%">
@@ -46,7 +66,7 @@ Tablero gerencial sobre un dataset financiero 2018–2019, con una **arquitectur
 
 ---
 
-### 2️⃣ Agente conversacional RAG sobre documentos académicos · n8n + Gemini
+### 3️⃣ Agente conversacional RAG sobre documentos académicos · n8n + Gemini
 
 <a href="Automatizaciones_IA">
 <img src="Automatizaciones_IA/IMAGENES/08-n8n-agente-rag.png" width="100%">
@@ -60,7 +80,7 @@ Agente que responde consultas sobre sílabos universitarios usando una **base ve
 
 ---
 
-### 3️⃣ Control estadístico de calidad en un restaurante real · SPC
+### 4️⃣ Control estadístico de calidad en un restaurante real · SPC
 
 <a href="Ingenieria_Proyectos/Service_Quality_Analytics_LaTapadita">
 <img src="Ingenieria_Proyectos/Service_Quality_Analytics_LaTapadita/IMAGENES/spc-y-pareto.jpg" width="100%">
@@ -74,7 +94,7 @@ Diagnóstico de calidad de servicio en **"La Tapadita"**, con datos levantados e
 
 ---
 
-### 4️⃣ CRM de ventas en Power Apps + Power Automate · Power Platform
+### 5️⃣ CRM de ventas en Power Apps + Power Automate · Power Platform
 
 <a href="PowerApps_Proyectos/CRM_Ventas_PowerApps">
 <img src="PowerApps_Proyectos/CRM_Ventas_PowerApps/IMAGENES/02-app-registrar-venta.jpg" width="100%">
@@ -97,6 +117,7 @@ Aplicación canvas de **8 pantallas** sobre **5 listas de SharePoint**, con **4 
 
 | Área | Qué encontrarás | Stack | Evidencia |
 | :--- | :--- | :--- | :--- |
+| **[🔗 Proyectos_End_to_End](./Proyectos_End_to_End)** | Customer Shopping Behavior: pipeline completo Python → SQL Server → Power BI sobre 3,900 clientes, con 10 preguntas de negocio en T-SQL | `Python` `Pandas` `SQLAlchemy` `SQL Server` `T-SQL` `Power BI` `DAX` | 🖼️ 4 capturas · 📓 notebook · 💾 script `.sql` · 📦 archivo `.pbix` |
 | **[📊 PowerBI_Proyectos](./PowerBI_Proyectos)** | Control financiero y presupuestario · HR Analytics con segmentación demográfica y por banda salarial | `Power BI` `DAX` `Power Query` | 🖼️ 13 capturas · 📦 archivos `.pbix` · 📄 datasets |
 | **[🤖 Automatizaciones_IA](./Automatizaciones_IA)** | 9 flujos: agente RAG, pipeline de embeddings, alertas de KPI con y sin IA, generación documental, integraciones | `n8n` `Make` `Gemini` `RAG` | 🖼️ 11 capturas · ⏱️ registros de ejecución reales |
 | **[⚡ PowerApps_Proyectos](./PowerApps_Proyectos)** | CRM de ventas en Power Apps sobre SharePoint: 8 pantallas, modelo relacional por IDs y 4 flujos de Power Automate | `Power Apps` `Power Fx` `Power Automate` `SharePoint` | 🖼️ 21 capturas · 🔤 fórmulas Power Fx documentadas |
@@ -113,6 +134,7 @@ Todos son proyectos sobre **operaciones de empresas reales**, con levantamiento 
 
 | Caso | Qué se midió | Resultado |
 | :--- | :--- | :--- |
+| **[Customer Shopping Behavior](Proyectos_End_to_End/Customer_Shopping_Behavior)** | Ticket promedio por género, edad, categoría y suscripción sobre 3,900 clientes | Ticket **plano en todas las dimensiones** (0 %–11.4 %): la brecha de ingreso de **2.1× entre hombres y mujeres es 100 % volumen**, no gasto — las mujeres gastan **$60.25 vs $59.54** |
 | **[Tottus — sistemas de colas](Ingenieria_Proyectos/OptiQueue_Tottus)** | Llegadas y tiempos de servicio en buffet, horas punta | Distribuciones validadas con **Chi-cuadrado**; modelo **M/M/s** muestra que pasar de 4 a 5 servidores reduce la cola sobre una operación de **~S/ 300,000 mensuales** |
 | **[Redes de distribución](Ingenieria_Proyectos/Optimizacion_Redes_Logistica)** | Costos de transporte multi-nodo con transbordo | Ruta de **costo mínimo de $270,000** y utilidad neta optimizada de **$93,500** |
 | **[Previsión de demanda](Ingenieria_Proyectos/Sales_Forecasting_Model)** | Descomposición de serie de tiempo (T, S, C, I) | Estacionalidad cuantificada: **diciembre +6.82 %**, **febrero −4.71 %**, con límites de confianza para gestión de inventario |
@@ -162,6 +184,7 @@ Becario **Beca 18** (PRONABEC), beca integral por alto rendimiento académico ·
 
 ## 🧭 Cómo recorrer este repositorio
 
+- **¿Quieres ver un proyecto completo de punta a punta?** → [Proyectos_End_to_End](./Proyectos_End_to_End) — Python, SQL Server y Power BI en una sola cadena.
 - **¿Vienes de una vacante de BI?** → [PowerBI_Proyectos](./PowerBI_Proyectos) y luego [SQL_Proyectos](./SQL_Proyectos).
 - **¿De una vacante de automatización o IA?** → [Automatizaciones_IA](./Automatizaciones_IA).
 - **¿De una vacante de Power Platform / aplicaciones internas?** → [PowerApps_Proyectos](./PowerApps_Proyectos).
